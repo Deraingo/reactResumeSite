@@ -14,7 +14,7 @@ function App() {
           <div className='contents'>
             <a className='social-link' href='https://github.com/Deraingo' target="_blank">Github</a>
             <a className='social-link' href='https://www.linkedin.com/in/daniel-wakefield-a4679023b' target="_blank">LinkedIn</a>
-            <a className='social-link' href='' target="_blank">Instagram</a>
+            <a className='social-link' href='https://www.instagram.com/deraingo/' target="_blank">Instagram</a>
           </div>
         </div>
         {/* Other components and main content go here */}
