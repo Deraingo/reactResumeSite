@@ -25,7 +25,7 @@ const router = createHashRouter([
     element: <swe-proj/>
   },
   {
-    path: "/maple-proj",
+    path: "./projects/maple-proj",
     element: <maple-proj/>
   },
   {

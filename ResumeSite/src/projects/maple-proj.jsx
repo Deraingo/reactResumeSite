@@ -18,12 +18,7 @@ function Sidebar() {
         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
           <nav>
             <ul>
-              <li><Link to="/" onClick={toggleSidebar}>Home</Link></li>
-              <li><Link to="/recipe-manager" onClick={toggleSidebar}>Recipe Manager</Link></li>
-              <li><Link to="/swe-proj" onClick={toggleSidebar}>SWE Project</Link></li>
-              <li><Link to="./projects/maple-proj/" onClick={toggleSidebar}>Maple Project</Link></li>
-              <li><Link to="/findable-glowsticks" onClick={toggleSidebar}>Findable Glowsticks</Link></li>
-              <li><Link to="/power-play" onClick={toggleSidebar}>Power Play</Link></li>
+              <li><Link to="https://climate.usu.edu/mapleTreeProject/mapleTreeProject.php" target="_blank" onClick={toggleSidebar}>Recipe Manager</Link></li>
             </ul>
           </nav>
         </div>
