@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import Sidebar from '../sidebar';
 
-function RecipeManager() {
+function PowerPlay() {
   
   return (
-    <div className="recipe-container">
+    <div className="power-container">
       <Sidebar />
-      <h2>Recipe Manager</h2>
+      <h2>Power Play</h2>
     </div>
   );
 }
   
-export default RecipeManager;
+export default PowerPlay;
