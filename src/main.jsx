@@ -4,6 +4,12 @@ import App from './App.jsx'
 import './index.css'
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Provider, useSelector } from 'react-redux';
+import SweProj from './projects/swe-proj.jsx';
+import MapleProj from './projects/maple-proj.jsx';
+import TheFinals from './projects/the-finals.jsx';
+import RecipeManager from './projects/recipe-manager.jsx';
+import PowerPlay from './projects/power-play.jsx';
+import FinalsRoulette from './projects/finals-roulette.jsx';
 
 const router = createHashRouter([
   {
@@ -18,23 +24,27 @@ const router = createHashRouter([
   },
   {
     path: "/recipe-manager",
-    element: <recipe-manager />
+    element: <RecipeManager />
   },
   {
     path: "/swe-proj",
-    element: <swe-proj/>
+    element: <SweProj />
   },
   {
-    path: "./projects/maple-proj",
-    element: <maple-proj/>
-  },
-  {
-    path: "/findable-glowsticks",
-    element: <findable-glowsticks/>
+    path: "/maple-proj",
+    element: <MapleProj />
   },
   {
     path: "/power-play",
-    element: <power-play/>
+    element: <PowerPlay/>
+  },
+  {
+    path: "/the-finals",
+    element: <TheFinals />
+  },
+  {
+    path: "/finals-roulette",
+    element: <FinalsRoulette/>
   }
 ]);
 

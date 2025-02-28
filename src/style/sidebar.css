@@ -6,14 +6,16 @@
     padding: 20px;
     position: fixed;
     height: 100%;
-    left: -250px;
+    left: -260px;
     top: 0;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     z-index: 1000;
+    text-align: left;
   }
   
   .sidebar.open {
     left: 0;
+    transition: all 0.7s ease;
   }
   
   .sidebar nav ul {
@@ -47,9 +49,11 @@
     border-radius: 5px;
     cursor: pointer;
     z-index: 1001;
+    transition: all 0.7s ease;
   }
   
   .hamburger-menu.open {
+    transition: all 0.7s ease;
     left: 270px;
   }
   

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import Sidebar from '../sidebar';
 
-function RecipeManager() {
+function TheFinals() {
   
   return (
-    <div className="recipe-container">
+    <div className="swe-container">
       <Sidebar />
-      <h2>Recipe Manager</h2>
+      <h2>The Finals</h2>
     </div>
   );
 }
   
-export default RecipeManager;
+export default TheFinals;
