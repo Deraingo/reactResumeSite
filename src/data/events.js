@@ -1,0 +1,1 @@
+export const events = ["None", "Low Gravity", "Mega Damage", "Dead Go Boom"]

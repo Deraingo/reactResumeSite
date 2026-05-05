@@ -8,12 +8,13 @@ import SweProj from './projects/swe-proj.jsx';
 import MapleProj from './projects/maple-proj.jsx';
 import TheFinals from './projects/the-finals.jsx';
 import RecipeManager from './projects/recipe-manager.jsx';
-import PowerPlay from './projects/power-play.jsx';
 import FinalsRoulette from './projects/finals-roulette.jsx';
+import CustomizationMenu from './components/CustomizationMenu.jsx';
+import AboutMe from './projects/about-me.jsx';
 
 const router = createHashRouter([
   {
-    path: "",
+    path: "/",
     element: <App />,
     children:[
       {
@@ -35,16 +36,20 @@ const router = createHashRouter([
     element: <MapleProj />
   },
   {
-    path: "/power-play",
-    element: <PowerPlay/>
-  },
-  {
     path: "/the-finals",
     element: <TheFinals />
   },
   {
     path: "/finals-roulette",
     element: <FinalsRoulette/>
+  },
+  {
+    path: "/custom-game-ui",
+    element: <CustomizationMenu/>
+  },
+  {
+    path: "/about-me",
+    element: <AboutMe/>
   }
 ]);
 
