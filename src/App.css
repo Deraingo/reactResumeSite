@@ -18,6 +18,11 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.project-info {
+  text-align: left;
+  margin-top: 10px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -41,15 +46,29 @@
   color: #888;
 }
 
-
-.about-me{
+.about-me {
   text-align: left;
   text-decoration: none;
   margin: auto;
   width: 75%;
 }
-ul{
+ul {
   list-style: none;
   margin-block-start: 0px;
   margin-block-end: 0px;
+}
+.project-card {
+  margin: 15px;
+}
+
+.card-container {
+  margin-top: 100px;
+}
+.card-link {
+  cursor: pointer;
+  background-color: #242424;
+  color: white !important;
+}
+.card-link:hover {
+  background-color: #363636;
 }
