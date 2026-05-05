@@ -14,10 +14,10 @@ function AboutMe() {
         <p>
           I have been developing professionally for 6 years as of 02/11/2026. I
           specialize in full stack web development but in my freetime I enjoy
-          working on integrated circuits, game development, data analysis, and
-          creating tools for myself or others to use.
+          snowboarding, skateboarding, climbing, working on integrated circuits,
+          game development, data analysis, and creating tools for myself or
+          others to use.
         </p>
-
         <div style={{ display: "flex", gap: "1rem", margin: "1rem 0" }}>
           <button
             onClick={() => setShowHobby(false)}
