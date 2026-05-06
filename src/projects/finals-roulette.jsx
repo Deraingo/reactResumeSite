@@ -18,7 +18,7 @@ const FinalsRoulette = () => {
       <Sidebar />
       <div className="app-container">
         <h1>The Finals Loadout Builder</h1>
-        <ClassSelect />
+        {/* <ClassSelect /> */}
         <RandomLoadoutButton
           onGenerate={() => setLoadout(generateRandomLoadout())}
         />

@@ -4,7 +4,6 @@ import "./style/sidebar.css";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -12,19 +11,18 @@ function Sidebar() {
   return (
     <>
       <div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className={`hamburger-menu ${isHovered || isOpen ? "open" : ""}`}
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
+        className={`hamburger-menu ${isOpen ? "open" : ""}`}
         onClick={toggleSidebar}
       >
         <span className="hamburger-icon">&#9776;</span>
         <span className="header-text">Links</span>
       </div>
       <div
-        className={`sidebar ${isHovered || isOpen ? "open" : ""}`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onClick={toggleSidebar}
+        className={`sidebar ${isOpen ? "open" : ""}`}
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
       >
         <nav>
           <ul>
@@ -59,8 +57,13 @@ function Sidebar() {
               </Link>
             </li>
             <li>
-              <Link to="/titch-cord-bots/" onClick={toggleSidebar}>
-                Custom Bots
+              <Link to="/swco/" onClick={toggleSidebar}>
+                SWCO
+              </Link>
+            </li>
+            <li>
+              <Link to="/twitch-cord-bots/" onClick={toggleSidebar}>
+                Finals Roulette Bot
               </Link>
             </li>
             <li>

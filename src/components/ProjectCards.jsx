@@ -38,12 +38,12 @@ function ProjectCards() {
             </div>
           </div>
         </Link>
-        <Link className="card-link p-15 rounded-lg shadow-md" to="vibe-bot">
+        <Link className="card-link p-15 rounded-lg shadow-md" to="twitch-cord-bots">
           <div className="project-card" p-15 rounded-lg shadow-md>
             <div className="proj-image"></div>
             <div className="proj-desc">
-              <h3>Vibebot</h3>
-              <p class="text-gray-600">A simple twitch command utility</p>
+              <h3>Finals Roulette Bot</h3>
+              <p class="text-gray-600">A simple twitch redeem and discord command utility</p>
             </div>
           </div>
         </Link>
@@ -62,7 +62,7 @@ function ProjectCards() {
             </div>
           </div>
         </Link>
-        <Link className="card-link p-15 rounded-lg shadow-md" to="way-mark">
+        {/* <Link className="card-link p-15 rounded-lg shadow-md" to="way-mark">
           <div className="project-card" p-15 rounded-lg shadow-md>
             <div className="proj-image"></div>
             <div className="proj-desc">
@@ -72,7 +72,7 @@ function ProjectCards() {
               </p>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </>
   );
