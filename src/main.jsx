@@ -13,6 +13,7 @@ import AboutMe from "./projects/about-me.jsx";
 import TwitchCordBot from "./projects/twitch-cord-bots.jsx";
 import VibeBot from "./projects/vibe-bot.jsx";
 import WayMark from "./projects/way-mark.jsx";
+import SwcoProj from "./projects/swco.jsx";
 const router = createHashRouter([
   {
     path: "/",
@@ -26,6 +27,10 @@ const router = createHashRouter([
   {
     path: "/recipe-manager",
     element: <RecipeManager />,
+  },
+  {
+    path: "/swco",
+    element: <SwcoProj />,
   },
   {
     path: "/swe-proj",

@@ -14,14 +14,17 @@ const FinalsRoulette = () => {
   const [selectedEquipment, setSelectedEquipment] = useState(null);
 
   return (
-    <div className="app-container">
-      <h1>The Finals Loadout Builder</h1>
-      <ClassSelect />
-      <RandomLoadoutButton
-        onGenerate={() => setLoadout(generateRandomLoadout())}
-      />
-      <LoadoutDisplay loadout={loadout} />
-    </div>
+    <>
+      <Sidebar />
+      <div className="app-container">
+        <h1>The Finals Loadout Builder</h1>
+        {/* <ClassSelect /> */}
+        <RandomLoadoutButton
+          onGenerate={() => setLoadout(generateRandomLoadout())}
+        />
+        <LoadoutDisplay loadout={loadout} />
+      </div>
+    </>
   );
 };
 

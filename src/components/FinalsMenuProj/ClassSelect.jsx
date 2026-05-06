@@ -1,5 +1,5 @@
 import React from "react";
-import "./finals-utils/style/class-selector.css";
+import "./style/style.css";
 
 const ClassSelect = ({ onSelect }) => (
   <div className="class-input">

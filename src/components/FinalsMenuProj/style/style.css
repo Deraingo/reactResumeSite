@@ -1,0 +1,14 @@
+.class-selector {
+  background-color: #242424;
+}
+.class-input {
+  margin: 50px;
+}
+.class-card {
+  cursor: pointer;
+  background-color: #242424;
+  color: white !important;
+}
+.class-card:hover {
+  background-color: #363636;
+}

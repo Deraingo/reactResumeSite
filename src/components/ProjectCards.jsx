@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 function ProjectCards() {
   return (
     <>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 card-container">
-        <Link className="card-link" to="/recipe-manager">
-          <div className="project-card" p-15 rounded-lg shadow-md>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 card-container ">
+        <Link
+          className="card-link p-15 rounded-lg shadow-md"
+          to="/recipe-manager"
+        >
+          <div className="project-card">
             <div className="proj-image"></div>
             <div className="proj-desc">
               <h3>Recipe Manager</h3>
@@ -15,18 +18,18 @@ function ProjectCards() {
             </div>
           </div>
         </Link>
-        <Link className="card-link" to="/the-finals">
-          <div className="project-card" p-15 rounded-lg shadow-md>
+        <Link className="card-link p-15 rounded-lg shadow-md" to="/the-finals">
+          <div className="project-card">
             <div className="proj-image"></div>
             <div className="proj-desc">
-              <h3 className="card-link">The Finals Data Analysis</h3>
+              <h3>The Finals Data Analysis</h3>
               <p class="text-gray-600">
                 Does Embark hold bias to one player group?
               </p>
             </div>
           </div>
         </Link>
-        <Link className="card-link" to="swe-proj">
+        <Link className="card-link p-15 rounded-lg shadow-md" to="swe-proj">
           <div className="project-card" p-15 rounded-lg shadow-md>
             <div className="proj-image"></div>
             <div className="proj-desc">
@@ -35,16 +38,19 @@ function ProjectCards() {
             </div>
           </div>
         </Link>
-        <Link className="card-link" to="vibe-bot">
+        <Link className="card-link p-15 rounded-lg shadow-md" to="twitch-cord-bots">
           <div className="project-card" p-15 rounded-lg shadow-md>
             <div className="proj-image"></div>
             <div className="proj-desc">
-              <h3>Vibebot</h3>
-              <p class="text-gray-600">A simple twitch command utility</p>
+              <h3>Finals Roulette Bot</h3>
+              <p class="text-gray-600">A simple twitch redeem and discord command utility</p>
             </div>
           </div>
         </Link>
-        <Link className="card-link" to="finals-roulette">
+        <Link
+          className="card-link p-15 rounded-lg shadow-md"
+          to="finals-roulette"
+        >
           <div className="project-card" p-15 rounded-lg shadow-md>
             <div className="proj-image"></div>
             <div className="proj-desc">
@@ -56,7 +62,7 @@ function ProjectCards() {
             </div>
           </div>
         </Link>
-        <Link className="card-link" to="way-mark">
+        {/* <Link className="card-link p-15 rounded-lg shadow-md" to="way-mark">
           <div className="project-card" p-15 rounded-lg shadow-md>
             <div className="proj-image"></div>
             <div className="proj-desc">
@@ -66,7 +72,7 @@ function ProjectCards() {
               </p>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </>
   );
