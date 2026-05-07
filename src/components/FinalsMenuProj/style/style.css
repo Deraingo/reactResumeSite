@@ -1,14 +1,25 @@
-.class-selector {
+.class-selector, .weapon-selector, .spec-selector{
   background-color: #242424;
 }
-.class-input {
+.class-input, .weapon-input, .spec-input{
   margin: 50px;
 }
-.class-card {
+.class-card, .weapon-card, .spec-card{
   cursor: pointer;
   background-color: #242424;
   color: white !important;
 }
-.class-card:hover {
+.class-card:hover, .weapon-card:hover, .spec-card:hover, .equipment-card:hover{
   background-color: #363636;
+}
+.equipment-card.selected {
+  border: 2px solid #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+.equipment-card{
+  cursor: pointer;
+}
+.option-select{
+  margin-bottom: 30px;
+  margin-top: 40px;
 }

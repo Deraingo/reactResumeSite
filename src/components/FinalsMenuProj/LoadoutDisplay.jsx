@@ -1,7 +1,7 @@
 import React from "react";
 
 const LoadoutDisplay = ({ loadout }) => {
-  if (!loadout) return <p>Click the button to generate a random loadout!</p>;
+  if (!loadout) return <p></p>;
 
   return (
     <div className="loadout-card">
