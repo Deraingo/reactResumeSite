@@ -37,6 +37,7 @@ const FinalsRoulette = () => {
       <div className="app-container">
         <h1>The Finals Loadout Builder</h1>
         <i className="italics">*Stacking melee values are averaged instead*</i>
+        <i className="italics">*All charge/alt fire weapons have their high values displayed* This will change later</i>
         <RouletteOrLoadout onSelect={handleOptionSelect}/>
         {selectedOption && selectedOption !== "Roulette" && !selectedClass && (
           <ClassSelect onSelect={handleClassSelect} />
