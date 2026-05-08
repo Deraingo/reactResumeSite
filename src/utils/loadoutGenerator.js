@@ -21,3 +21,12 @@ export const generateRandomLoadout = () => {
     };
 
 };
+
+export const generateCleanLoadout = (className, specName, weaponName, equipmentArray) => {
+    return {
+        className: className,
+        ability: specName,
+        weapon: weaponName,
+        equipment: equipmentArray
+    }
+}
