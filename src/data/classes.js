@@ -13,7 +13,7 @@ export const weapons = {
         headshotMultiplier: 1.5,
         bodyDamage: 25,
         environmentalDamage: 7,
-        fireRate: 1000,
+        fireRate: 210,
         magazine: 21,
         minRange: 30,
         maxRange: 37.5,
@@ -308,7 +308,7 @@ export const weapons = {
         headshotMultiplier: null,
         bodyDamage: 23,
         environmentalDamage: 9,
-        fireRate: 1100,
+        fireRate: 220,
         magazine: 27,
         minRange: 35,
         maxRange: 42.5,
@@ -1259,4 +1259,9 @@ export const classes = {
             "Gas Grenade", "Goo Grenade", "Pyro Grenade", "Smoke Grenade"
         ]
     }
+};
+export const CLASS_HP = {
+  Light: 150,
+  Medium: 250,
+  Heavy: 350,
 };

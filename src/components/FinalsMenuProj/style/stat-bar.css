@@ -1,0 +1,34 @@
+/* Stat row — label + value + bar all on one line, consistent spacing */
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.stat-label {
+  display: inline-block;
+}
+
+.stat-bar {
+  display: inline-flex;
+  gap: 3px;
+  align-items: flex-end;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+/* Each bar — a small rectangle */
+.stat-bar .bar {
+  display: inline-block;
+  width: 5px;
+  height: 14px;
+  border-radius: 2px;
+  background: #555;
+}
+
+/* Tier colors */
+.stat-bar .bar.empty       { background: rgba(255, 255, 255, 0.1); }
+.stat-bar.low .bar.filled  { background: #22c55e; }
+.stat-bar.med .bar.filled  { background: #eab308; }
+.stat-bar.high .bar.filled { background: #ef4444; }
