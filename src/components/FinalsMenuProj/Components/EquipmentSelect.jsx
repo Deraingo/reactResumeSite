@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { classes } from "../../data/classes";
-import "./style/style.css";
+import { classes } from "../../../data/classes";
+import "../style/style.css";
 
 const MAX_EQUIPMENT = 4;
 

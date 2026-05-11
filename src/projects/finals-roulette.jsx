@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { generateRandomLoadout } from "../utils/loadoutGenerator";
-import LoadoutDisplay from "../components/FinalsMenuProj/LoadoutDisplay";
+import LoadoutDisplay from "../components/FinalsMenuProj/Components/LoadoutDisplay";
 import RandomLoadoutButton from "../components/FinalsMenuProj//RandomLoadoutButton";
 import { Link } from "react-router-dom";
 import "../App.css";
 import Sidebar from "../sidebar";
-import ClassSelect from "../components/FinalsMenuProj/ClassSelect";
-import SpecSelect from "../components/FinalsMenuProj/SpecSelect";
-import WeaponSelect from "../components/FinalsMenuProj/WeaponSelect";
+import ClassSelect from "../components/FinalsMenuProj/Components/ClassSelect";
+import SpecSelect from "../components/FinalsMenuProj/Components/SpecSelect";
+import WeaponSelect from "../components/FinalsMenuProj/Components/WeaponSelect";
 import RouletteOrLoadout from "../components/FinalsMenuProj/RouletteOrLoadout";
-import EquipmentSelect from "../components/FinalsMenuProj/EquipmentSelect";
+import EquipmentSelect from "../components/FinalsMenuProj/Components/EquipmentSelect";
 
 const FinalsRoulette = () => {
   const [loadout, setLoadout] = useState(null);

@@ -1,7 +1,7 @@
 import React from "react";
-import "./style/style.css";
+import "../style/style.css";
 import SpecSelect from "./SpecSelect";
-import { classes } from "../../data/classes";
+import { classes } from "../../../data/classes";
 const classNames = Object.keys(classes);
 const ClassSelect = ({ onSelect }) => (
   

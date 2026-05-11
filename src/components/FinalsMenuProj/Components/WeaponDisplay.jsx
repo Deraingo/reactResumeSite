@@ -1,40 +1,5 @@
-import React, { useState } from "react";
-import { weapons } from "../../data/classes";
-import "./style/style.css"
-import AdvancedLoadoutDisplay from "./AdvancedLoadoutDisplay";
-import DamageCalculator from "./custom-assets/DamageCalculator";
-import StatBar from "./custom-assets/StatBar";
-const LoadoutDisplay = ({ loadout }) => {
-  const [showTechnical, setTechnical] = useState(false);
-  if (!loadout) return <p></p>;
-  const weaponData = weapons[loadout.weapon];
-  return (
-    <>
-      <div style={{ display: "flex", gap: "1rem", margin: "1rem 0" }}>
-          <button
-            onClick={() => setTechnical(false)}
-            style={{ fontWeight: !showTechnical ? "bold" : "normal" }}
-          >
-            Basic
-          </button>
-          <button
-            onClick={() => setTechnical(true)}
-            style={{ fontWeight: showTechnical ? "bold" : "normal" }}
-          >
-            Advanced
-          </button>
-      </div>
-      <div className="loadout-card grid sm:grid-cols-2 lg:grid-cols-2 gap-40">
-      {weaponData &&(
-        <>
-        <div className="base">
-          <h2>Class: {loadout.className}</h2>
-          
-          <p><strong>Ability:</strong> {loadout.ability}</p>
-          <p><strong>Equipment:</strong> {loadout.equipment.join(", ")}</p>
-          
-        </div>
-        <div className="description">
+const WeaponDisplay = ({loadout, weaponData, StatBar, DamageCalculator, showTechnical}) => {
+ return (<div className="description">
           <p>
             <strong>Weapon:</strong> {loadout.weapon}
             {weaponData?.type && <> - <i className="italics">{weaponData.type}</i></>}
@@ -87,27 +52,27 @@ const LoadoutDisplay = ({ loadout }) => {
                 <StatBar value={weaponData.magazine} low={1} high={300}/>
               </p>
             )}
-            {weaponData?.minRange != null && (
+            {weaponData?.minRange != null && showTechnical &&(
               <p className="stat-row">
                 <span className="stat-label">Min Range:</span>
                 <i>{weaponData.minRange}m</i>
                 <StatBar value={weaponData.minRange} low={1} high={300}/>
               </p>
             )}
-            {weaponData?.maxRange != null && (
+            {weaponData?.maxRange != null && showTechnical &&(
               <p className="stat-row">
                 <span className="stat-label">Max Range:</span>
                 <i>{weaponData.maxRange}m</i>
                 <StatBar value={weaponData.maxRange} low={1} high={300}/>
               </p>
             )}
-            {weaponData?.reloadTime != null && (
+            {weaponData?.reloadTime != null && showTechnical &&(
               <p className="stat-row">
                 <span className="stat-label">Tac Reload Speed:</span>
                 <i>{weaponData.reloadTime}s</i>
                 <StatBar value={weaponData.reloadTime} low={1} high={300}/>
               </p>
-            )}{weaponData?.emptyReloadTime != null && (
+            )}{weaponData?.emptyReloadTime != null && showTechnical &&(
               <p className="stat-row">
                 <span className="stat-label">Empty Reload Speed:</span>
                 <i>{weaponData.emptyReloadTime}s</i>
@@ -115,17 +80,7 @@ const LoadoutDisplay = ({ loadout }) => {
               </p>
             )}
           </div>
-        </div>
-        </>
-        )} { showTechnical && weaponData && (
-          <>
-            <AdvancedLoadoutDisplay loadout={loadout} weaponData={weaponData}/>
-          </>
-        )}
-      
-      </div>
-    </>
-  );
-};
+        </div>)
+}
 
-export default LoadoutDisplay;
+export default WeaponDisplay;

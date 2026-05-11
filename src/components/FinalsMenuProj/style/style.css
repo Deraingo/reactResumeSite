@@ -4,20 +4,18 @@
 .class-input, .weapon-input, .spec-input{
   margin: 50px;
 }
-.class-card, .weapon-card, .spec-card{
+.class-card, .weapon-card, .spec-card {
   cursor: pointer;
   background-color: #242424;
   color: white !important;
-}
-.class-card:hover, .weapon-card:hover, .spec-card:hover, .equipment-card:hover{
-  background-color: #363636;
+  margin-bottom: 20px;
 }
 .equipment-card.selected {
   border: 2px solid #4ade80;
   background: rgba(74, 222, 128, 0.1);
 }
-.equipment-card{
-  cursor: pointer;
+.equipment-output{
+  margin-bottom: 20px;
 }
 .option-select{
   margin-bottom: 30px;

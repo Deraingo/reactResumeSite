@@ -1,6 +1,6 @@
 import React from "react";
-import { classes } from "../../data/classes";
-import "./style/style.css";
+import { classes } from "../../../data/classes";
+import "../style/style.css";
 
 const SpecSelect = ({ selectedClass, onSelect }) => {
   if (!selectedClass) return null;
@@ -24,8 +24,5 @@ const SpecSelect = ({ selectedClass, onSelect }) => {
   );
 };
 
-function onHover(){
-
-}
 
 export default SpecSelect;

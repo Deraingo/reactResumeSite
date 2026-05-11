@@ -1,6 +1,6 @@
 import React from "react";
-import { classes } from "../../data/classes";
-import "./style/style.css";
+import { classes } from "../../../data/classes";
+import "../style/style.css";
 // Body damage falloff line
 // const close = { x: w.minRange, y: w.bodyDamage };
 // const far = { x: w.maxRange, y: w.bodyDamage * w.falloffMultiplier };
