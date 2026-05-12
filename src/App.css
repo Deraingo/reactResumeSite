@@ -75,3 +75,6 @@ ul {
 .italics{
   color: #7e7e7e;
 }
+.class-card:hover {
+ background-color: #363636;
+}

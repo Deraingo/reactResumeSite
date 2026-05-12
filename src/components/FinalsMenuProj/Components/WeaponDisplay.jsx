@@ -4,8 +4,13 @@ import "./style/style.css"
 const WeaponDisplay = ({loadout, weaponData, StatBar, DamageCalculator, showTechnical}) => {
  const headLabel = weaponData.type === "Melee" ? "Alt Fire" : "Head";
   return (
-    <div className="description">
+    <div className="description weapon-description">
       <Link to={`/weapon/${loadout.className}/${encodeURIComponent(loadout.weapon)}`}>
+        <div className="stat-grid grid sm:grid-cols-3 gap-2">
+        <p></p>
+        <p></p>
+        <p className="hidden-text">Compare Weapon?</p>
+        </div>
         <p>
           <strong>Weapon:</strong> {loadout.weapon}
           {weaponData?.type && <> - <i className="italics">{weaponData.type}</i></>}

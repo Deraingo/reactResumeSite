@@ -10,4 +10,9 @@ a{
 a:hover{
     color: rgb(121, 121, 121);
 }
+.hidden-text{
+    color: #242424;
+}
 
+.weapon-description:hover, .hidden-text:hover{background-color: #363636;
+  cursor: pointer; color: white !important;}

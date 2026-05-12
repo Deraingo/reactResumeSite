@@ -4,7 +4,7 @@
 .class-input, .weapon-input, .spec-input{
   margin: 50px;
 }
-.class-card, .weapon-card, .spec-card {
+.class-card, .weapon-card, .spec-card, .equipment-card {
   cursor: pointer;
   background-color: #242424;
   color: white !important;
@@ -30,6 +30,9 @@
 .ttk-row{
   text-align: left;
 }
-.ttk-breakdown{
-  margin-top: 35px;
+.class-card:hover, .weapon-card:hover, .spec-card:hover, .equipment-card:hover{
+  background-color: #363636;
+}
+.spec-card:hover{
+  background-color: #363636;
 }
