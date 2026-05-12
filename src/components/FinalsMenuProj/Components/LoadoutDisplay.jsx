@@ -7,6 +7,7 @@ import StatBar from "../custom-assets/StatBar";
 import WeaponDisplay from "./WeaponDisplay";
 import SpecDisplay from "./SpecDisplay";
 import EquipmentDisplay from "./EquipmentDisplay";
+import TTKBreakdown from "../custom-assets/TTKBreakdown";
 const LoadoutDisplay = ({ loadout }) => {
   const [showTechnical, setTechnical] = useState(false);
   if (!loadout) return <p></p>;
@@ -36,7 +37,7 @@ const LoadoutDisplay = ({ loadout }) => {
             Advanced
           </button>
       </div>
-      <div className="loadout-card grid sm:grid-cols-2 lg:grid-cols-2 gap-40">
+      <div className="loadout-card grid sm:grid-cols-1 lg:grid-cols-2 gap-40">
       {weaponData &&(
         <>
         <div className="base">
@@ -50,6 +51,7 @@ const LoadoutDisplay = ({ loadout }) => {
         </div>
         <WeaponDisplay loadout={loadout} weaponData={weaponData} StatBar={StatBar} DamageCalculator={DamageCalculator} showTechnical={showTechnical}/>
         <SpecDisplay loadout={loadout} specData={specData} StatBar={StatBar} DamageCalculator={DamageCalculator}/>
+        <TTKBreakdown weaponData={weaponData}/>
         <EquipmentDisplay loadout={loadout} equipmentData={equipmentData} StatBar={StatBar} DamageCalculator={DamageCalculator} showTechnical={showTechnical}/>
         </>
         )} { showTechnical && weaponData && (

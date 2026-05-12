@@ -1,5 +1,5 @@
 const EquipmentDisplay = ({ loadout, equipmentData, StatBar, showTechnical }) => (
-    // spider chart showing Mobility, Range, Sustain, Utility, Crowd Control 
+ 
   <div className="description">
     {equipmentData.map((item, i) => (
       <div key={loadout.equipment[i]} className="equipment-output">

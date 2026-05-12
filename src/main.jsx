@@ -14,6 +14,7 @@ import TwitchCordBot from "./projects/twitch-cord-bots.jsx";
 import VibeBot from "./projects/vibe-bot.jsx";
 import WayMark from "./projects/way-mark.jsx";
 import SwcoProj from "./projects/swco.jsx";
+import WeaponDetail from "./components/FinalsMenuProj/WeaponDetail.jsx";
 const router = createHashRouter([
   {
     path: "/",
@@ -64,6 +65,11 @@ const router = createHashRouter([
     path: "/about-me",
     element: <AboutMe />,
   },
+  {
+    path:"/weapon/:className/:weaponName",
+    element: <WeaponDetail />,
+    errorElement: <p>Something went wrong loading this weapon.</p>
+  }
 ]);
 
 const Main = () => {

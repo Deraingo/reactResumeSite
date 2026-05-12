@@ -8,7 +8,6 @@ const AdvancedLoadoutDisplay = ({ loadout, weaponData }) => {
   return (
     <>
           <WeaponRangeChart weaponData={weaponData} />
-          <TTKBreakdown weaponData={weaponData}/>
     </>
   );
 };
