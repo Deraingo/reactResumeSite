@@ -28,18 +28,21 @@ const WeaponDetail = () => {
     
     <>
     <Link className="back-link" to="/finals-roulette">← Back</Link>
-      <div className="loadout-card grid sm:grid-cols-2 lg:grid-cols-2 gap-100">
-          
+    <div className="overflow-x-auto">
+      <div className="loadout-card grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="current-weapon">
               <h1>{decodeURIComponent(weaponName)}</h1>
-              <p>Class: {className}</p>
-              <p>Body Damage: {weaponJson.bodyDamage}<StatBar value={weaponJson.bodyDamage} low={10} high={150}/></p>
-              <p>{headLabel}: {weaponJson.headDamage}<StatBar value={weaponJson.headDamage} low={10} high={150}/></p>
-              <p>Environmental Damage: {weaponJson.environmentalDamage}<StatBar value={weaponJson.environmentalDamage} low={10} high={3000}/></p>
-              <p>DPS: {dps}<StatBar value={dps} low={10} high={300}/></p>
-              <p>Min Rage: {weaponJson.bodyDamage}<StatBar value={weaponJson.bodyDamage} low={10} high={300}/></p>
-              <p>Max Rage: {weaponJson.bodyDamage}<StatBar value={weaponJson.bodyDamage} low={10} high={300}/></p>
-              <TTKBreakdown weaponData={weaponJson}/>
+              <div className="details">
+                <p>Class: {className}</p>
+                <p>Body Damage: {weaponJson.bodyDamage}<StatBar value={weaponJson.bodyDamage} low={10} high={150}/></p>
+                <p>{headLabel}: {weaponJson.headDamage}<StatBar value={weaponJson.headDamage} low={10} high={150}/></p>
+                <p>Environmental Damage: {weaponJson.environmentalDamage}<StatBar value={weaponJson.environmentalDamage} low={10} high={3000}/></p>
+                <p>DPS: {dps}<StatBar value={dps} low={10} high={300}/></p>
+                <p>Min Rage: {weaponJson.bodyDamage}<StatBar value={weaponJson.bodyDamage} low={10} high={300}/></p>
+                <p>Max Rage: {weaponJson.bodyDamage}<StatBar value={weaponJson.bodyDamage} low={10} high={300}/></p>
+                </div>
+                <TTKBreakdown weaponData={weaponJson}/>
+              
           </div>
           
           {!compareData && (
@@ -61,21 +64,24 @@ const WeaponDetail = () => {
           {compareData && (
             <div className="compare-column">
               <h1>{compareName}</h1>
-              <p>Class: {className}</p>
-              <p>Body Damage: {compareData.bodyDamage}<StatBar value={compareData.bodyDamage} low={10} high={150}/></p>
-              <p>{headLabel}: {compareData.headDamage}<StatBar value={compareData.headDamage} low={10} high={150}/></p>
-              <p>Environmental Damage: {compareData.environmentalDamage}<StatBar value={compareData.environmentalDamage} low={10} high={3000}/></p>
-              <p>DPS: {dps}<StatBar value={dps} low={10} high={300}/></p>
-              <p>Min Rage: {compareData.bodyDamage}<StatBar value={compareData.bodyDamage} low={10} high={300}/></p>
-              <p>Max Rage: {compareData.bodyDamage}<StatBar value={compareData.bodyDamage} low={10} high={300}/></p>
-              <TTKBreakdown weaponData={compareData}/>
+              <div className="details">
+                <p>Class: {className}</p>
+                <p>Body Damage: {compareData.bodyDamage}<StatBar value={compareData.bodyDamage} low={10} high={150}/></p>
+                <p>{headLabel}: {compareData.headDamage}<StatBar value={compareData.headDamage} low={10} high={150}/></p>
+                <p>Environmental Damage: {compareData.environmentalDamage}<StatBar value={compareData.environmentalDamage} low={10} high={3000}/></p>
+                <p>DPS: {dps}<StatBar value={dps} low={10} high={300}/></p>
+                <p>Min Rage: {compareData.bodyDamage}<StatBar value={compareData.bodyDamage} low={10} high={300}/></p>
+                <p>Max Rage: {compareData.bodyDamage}<StatBar value={compareData.bodyDamage} low={10} high={300}/></p>
+                </div>
+                <TTKBreakdown weaponData={compareData}/>
+              
             </div>
           )}
           
       </div>
       {compareData && (
             <>
-            <div className="compare-table">
+            <div className="compare-table overflow-x-auto">
               <table>
                 <tr>
                   <th>Name</th>
@@ -105,7 +111,7 @@ const WeaponDetail = () => {
               </div>
           </>
           )}
-      
+      </div>
     </>
   );
 };

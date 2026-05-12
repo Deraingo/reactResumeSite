@@ -4,10 +4,9 @@
 }
 
 table {
-    margin-top: 20px;
+    min-width: 600px;
+    width: 100%;
     border: 2px solid rgb(88, 88, 88);
-    width: 800px;
-    height: 200px;
 }
 
 th {
@@ -23,9 +22,16 @@ td {
     justify-content: flex-start;
     flex-direction: row;   
 }
-.current-weapon{
-    width: 25vw;
+.current-weapon,
+.compare-column {
+    max-width: 600px;
+    width: 100%;
 }
-.compare-column{
-    width: 25wv;
+.details{
+    text-align: left;
+    margin: auto;
+    width: 50%;
+}
+.ttk-breakdown{
+  margin-top: 35px;
 }
