@@ -1,0 +1,31 @@
+.weapon-select-compare{
+    background-color: #242424;
+    color: white;
+}
+
+table {
+    margin-top: 20px;
+    border: 2px solid rgb(88, 88, 88);
+    width: 800px;
+    height: 200px;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+.back-link{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;   
+}
+.current-weapon{
+    width: 25vw;
+}
+.compare-column{
+    width: 25wv;
+}

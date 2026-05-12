@@ -1,0 +1,12 @@
+.description{
+    color: white !important;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(121, 121, 121);
+}
