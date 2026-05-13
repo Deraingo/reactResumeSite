@@ -23,8 +23,15 @@ const WeaponDetail = () => {
   const handleChange = (e) => {
     setCompareName(e.target.value);
   };
+  let avgCompareDamage;
+  let compareDps
   const headLabel = weaponJson.type === "Melee" ? "Alt Fire" : "Head";
-  const compareDps = ((avgDamage * compareData.fireRate) / 60).toFixed(2);
+  if (compareData){
+    avgCompareDamage = compareData.headDamage != null ? (compareData.bodyDamage + compareData.headDamage) / 2 : compareData.bodyDamage;
+    compareDps = ((avgDamage * compareData.fireRate) / 60).toFixed(2);
+    console.log(compareData.headDamage);
+  }
+  
   return (
     
     <>
@@ -106,7 +113,7 @@ const WeaponDetail = () => {
                   <th>{compareData.headDamage}</th>
                   <th>{compareData.environmentalDamage}</th>
                   <th>{compareData.magazine}</th>
-                  <th>{dps}</th>
+                  <th>{compareDps}</th>
                 </tr>
                 </table>
               </div>
