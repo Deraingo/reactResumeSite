@@ -24,6 +24,7 @@ const WeaponDetail = () => {
     setCompareName(e.target.value);
   };
   const headLabel = weaponJson.type === "Melee" ? "Alt Fire" : "Head";
+  const compareDps = ((avgDamage * compareData.fireRate) / 60).toFixed(2);
   return (
     
     <>
